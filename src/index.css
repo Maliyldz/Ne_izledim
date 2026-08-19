@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cinema-bg: #0B0B0F;
+  --color-cinema-card: #16161D;
+  --color-cinema-border: #26262F;
+  --color-cinema-gold: #F5B429;
+}
+
+body {
+  background-color: var(--color-cinema-bg);
+  color: #E8E8ED;
+  font-family: system-ui, -apple-system, sans-serif;
+}
