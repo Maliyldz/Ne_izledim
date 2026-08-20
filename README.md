@@ -2,7 +2,7 @@
 
 İzlediğiniz ve izleyeceğiniz film/dizileri kaydedebileceğiniz, puanlayabileceğiniz ve filtreleyebileceğiniz bir React uygulaması. Tüm veriler tarayıcının LocalStorage'ında saklanır; sunucu veya veritabanı gerektirmez.
 
-**Canlı demo:** [NETLIFY_LINKI_BURAYA]
+**Canlı demo:** https://izledim-arsiv.netlify.app
 
 ---
 

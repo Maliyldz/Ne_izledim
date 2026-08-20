@@ -2,6 +2,71 @@ import type { Movie } from "../interfaces";
 
 export const seedMovies: Movie[] = [
   {
+    title: "Avengers: Infinity War",
+    year: 2018,
+    type: "film",
+    genre: "Aksiyon",
+    status: "bitti",
+    rating: 5,
+    posterUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Ewe_3MZFes8heMdvfyqxO2hZ1JbDswCBTulvmNrwfe-rKJV3jglvkXDm&s=10",
+    note: "Avengers ekibinin kudretli Thanos karşısındaki çaresizliği",
+    id: "dcd4b12c-aec6-40ca-b53f-eb3985a66a45",
+    createdAt: "2026-08-20T13:45:43.461Z",
+  },
+  {
+    title: "Game of Thrones",
+    year: 2011,
+    type: "dizi",
+    genre: "Fantastik",
+    status: "izleniyor",
+    rating: 5,
+    posterUrl:
+      "https://i.pinimg.com/736x/a4/b9/9c/a4b99c529e4647452d033a150475cfa8.jpg",
+    note: "",
+    id: "cbff6fc6-038d-48ce-a215-68d14d58dcf7",
+    createdAt: "2026-08-20T12:54:22.632Z",
+  },
+  {
+    title: "Transformers: Dark of the Moon",
+    year: 2011,
+    type: "film",
+    genre: "Aksiyon",
+    status: "izleniyor",
+    rating: 4,
+    posterUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUxLybodzbcvJ39sru7K6VfvbtbAIIjpYjpId6WtSxbBj7yzIQxnkpHAKh&s=10",
+    note: "",
+    id: "c19b9191-67d6-45b7-b2d6-1052f80e1c09",
+    createdAt: "2026-08-20T12:52:19.449Z",
+  },
+  {
+    title: "Your Name",
+    year: 2015,
+    type: "film",
+    genre: "Animasyon",
+    status: "bitti",
+    rating: 5,
+    posterUrl:
+      "https://upload.wikimedia.org/wikipedia/tr/0/0b/Your_Name_poster.png?utm_source=tr.wikipedia.org&utm_campaign=index&utm_content=original",
+    note: "",
+    id: "241c1773-7737-4b9f-84a0-14e7516235b1",
+    createdAt: "2026-08-20T12:51:01.846Z",
+  },
+  {
+    title: "The Lord of the Rings: The Fellowship of the Ring",
+    year: 2001,
+    type: "film",
+    genre: "Aksiyon",
+    status: "bitti",
+    rating: 5,
+    posterUrl:
+      "https://upload.wikimedia.org/wikipedia/tr/e/e6/Y%C3%BCz%C3%BCklerinEfendisi%27Y%C3%BCz%C3%BCkKarde%C5%9Fli%C4%9Fi-film.jpg?utm_source=tr.wikipedia.org&utm_campaign=index&utm_content=original",
+    note: "",
+    id: "74cdcee5-2142-4c52-82a7-e10e2d36d0fa",
+    createdAt: "2026-08-20T12:49:37.871Z",
+  },
+  {
     id: "seed-1",
     title: "Interstellar",
     year: 2014,
@@ -9,7 +74,8 @@ export const seedMovies: Movie[] = [
     genre: "Bilim Kurgu",
     status: "bitti",
     rating: 5,
-    posterUrl: "",
+    posterUrl:
+      "https://media.bantmag.com/wp-content/uploads/i/interstellar-poster1.webp",
     note: "Zaman ve sevgi üzerine görsel bir şölen. Son yarım saat efsane.",
     createdAt: "2026-01-10T10:00:00.000Z",
   },
@@ -21,7 +87,8 @@ export const seedMovies: Movie[] = [
     genre: "Dram",
     status: "bitti",
     rating: 5,
-    posterUrl: "",
+    posterUrl:
+      "https://m.media-amazon.com/images/I/51O2ySDwX8L._AC_UF1000,1000_QL80_.jpg",
     note: "Karakter gelişiminin ders kitabı.",
     createdAt: "2026-01-12T10:00:00.000Z",
   },
@@ -33,7 +100,8 @@ export const seedMovies: Movie[] = [
     genre: "Bilim Kurgu",
     status: "izleniyor",
     rating: 4,
-    posterUrl: "",
+    posterUrl:
+      "https://m.media-amazon.com/images/I/81Rrx-Bv+6L._AC_UF1000,1000_QL80_.jpg",
     note: "Görüntü yönetimi inanılmaz.",
     createdAt: "2026-01-15T10:00:00.000Z",
   },
@@ -45,7 +113,8 @@ export const seedMovies: Movie[] = [
     genre: "Komedi",
     status: "izlenecek",
     rating: 0,
-    posterUrl: "",
+    posterUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbL4zvThG9V10F1TCadWBNowzhlzMqbRhfGVV-PJW8tv0hbHK3UPfrYxCN&s=10",
     note: "",
     createdAt: "2026-01-18T10:00:00.000Z",
   },
@@ -56,8 +125,9 @@ export const seedMovies: Movie[] = [
     type: "film",
     genre: "Gerilim",
     status: "bitti",
-    rating: 5,
-    posterUrl: "",
+    rating: 4,
+    posterUrl:
+      "https://cdn.sinemalar.com/images/movie/250365/poster/parasite-1646309305.jpg",
     note: "Sınıf farkını anlatan en zekice kurgu.",
     createdAt: "2026-01-20T10:00:00.000Z",
   },
