@@ -10,7 +10,6 @@ export const GENRES = [
   "Komedi",
   "Korku",
   "Gerilim",
-  "Animasyon",
   "Belgesel",
   "Fantastik",
   "Romantik",

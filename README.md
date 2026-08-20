@@ -1,75 +1,105 @@
-# React + TypeScript + Vite
+# 🎬 İzledim — Film & Dizi Arşivi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+İzlediğiniz ve izleyeceğiniz film/dizileri kaydedebileceğiniz, puanlayabileceğiniz ve filtreleyebileceğiniz bir React uygulaması. Tüm veriler tarayıcının LocalStorage'ında saklanır; sunucu veya veritabanı gerektirmez.
 
-Currently, two official plugins are available:
+**Canlı demo:** [NETLIFY_LINKI_BURAYA]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Özellikler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Ekle** — film veya dizi kaydı oluşturma (başlık, yıl, tür, kategori, durum, puan, poster, not)
+- **Listele** — poster kartlarından oluşan duyarlı ızgara görünümü
+- **Güncelle** — mevcut kayıtları düzenleme
+- **Sil** — onay penceresiyle güvenli silme
+- Başlıkta canlı arama (Türkçe karakter uyumlu)
+- Duruma ve kategoriye göre filtreleme
+- 5 yıldızlı puanlama sistemi
+- Toplam kayıt, bitirilen, izlenen ve ortalama puan istatistikleri
+- Verilerin LocalStorage ile kalıcı saklanması
+- Mobil uyumlu koyu tema
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Kullanılan Teknolojiler
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+| Teknoloji       | Amaç                        |
+| --------------- | --------------------------- |
+| React 19        | Arayüz kütüphanesi          |
+| TypeScript      | Tip güvenliği               |
+| Vite            | Geliştirme ve derleme aracı |
+| Tailwind CSS v4 | Stillendirme                |
+| React Router    | Sayfa yönlendirme           |
+| lucide-react    | İkonlar                     |
+| LocalStorage    | Veri saklama                |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Kurulum
 
+```bash
+# Projeyi klonlayın
+git clone https://github.com/Maliyldz/izledim.git
+
+# Klasöre girin
+cd izledim
+
+# Bağımlılıkları yükleyin
+npm install
+
+# Geliştirme sunucusunu başlatın
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Tarayıcıda `http://localhost:5173` adresini açın.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Üretim derlemesi için:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build
+npm run preview
+```
+
+---
+
+## Klasör Yapısı
 
 ```
+src/
+├── components/     # Tekrar kullanılabilir arayüz bileşenleri
+├── pages/          # Rotalara karşılık gelen sayfalar
+├── interfaces/     # TypeScript tip tanımları
+├── context/        # Global state ve CRUD işlemleri
+├── hooks/          # Özel React hook'ları
+└── utils/          # Sabitler ve örnek veri
+```
+
+---
+
+## Ekran Görüntüleri
+
+### Ana Sayfa
+
+![Ana Sayfa](./screenshots/01-anasayfa.png)
+
+### Yeni Kayıt Ekleme
+
+![Ekleme](./screenshots/02-ekleme.png)
+
+### Detay Sayfası
+
+![Detay](./screenshots/03-detay.png)
+
+### Silme Onayı
+
+![Silme](./screenshots/04-silme.png)
+
+### Mobil Görünüm
+
+![Mobil](./screenshots/05-mobil.png)
+
+---
+
+## Geliştirici
+
+Mehmet Ali YILDIZ — Software Persona Yazılım Mesleki Gelişim Web Geliştirme Bitirme Projesi, 2026
