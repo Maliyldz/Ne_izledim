@@ -1,6 +1,6 @@
 import type { WatchStatus, MediaType } from "../interfaces";
 
-export const STORAGE_KEY = "izledim-movies";
+export const STORAGE_KEY = "izledim-movies-v2";
 
 export const GENRES = [
   "Aksiyon",
