@@ -4,6 +4,7 @@ export const STORAGE_KEY = "izledim-movies";
 
 export const GENRES = [
   "Aksiyon",
+  "Animasyon",
   "Bilim Kurgu",
   "Dram",
   "Komedi",
